@@ -16,6 +16,7 @@ defmodule Smining.Application do
         # Children for all targets
         # Starts a worker by calling: Smining.Worker.start_link(arg)
         # {Smining.Worker, arg},
+        {Smining.Db, "./data"}
       ] ++ children(target())
 
     Supervisor.start_link(children, opts)

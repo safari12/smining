@@ -55,6 +55,8 @@ defmodule Smining.MixProject do
       {:nerves_system_osd32mp1, "~> 0.9", runtime: false, targets: :osd32mp1},
       {:nerves_system_x86_64, "~> 1.18", runtime: false, targets: :x86_64},
       {:tesla, "~> 1.4"},
+      {:cubdb, "~> 1.1"},
+      {:jason, "~> 1.3"}
     ]
   end
 
